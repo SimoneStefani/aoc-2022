@@ -29,7 +29,7 @@ fun main() {
                 maxX = max(maxX, it.coords.x + it.radius)
             }
         }
-        return (minX-1..maxX +1).count { x -> sensors.any { it.contains(Point(x, atY)) } } - 1
+        return (minX - 1..maxX + 1).count { x -> sensors.any { it.contains(Point(x, atY)) } } - 1
     }
 
     fun part2(input: List<String>, max: Long): Long {
